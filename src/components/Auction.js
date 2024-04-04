@@ -4,8 +4,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import TimePicker from 'react-time-picker';
 import 'react-time-picker/dist/TimePicker.css';
-import Navbar from './Navbar';
-import { Route } from 'react-router-dom';
+
 const Auction = () => {
 
     // constructor(props){
@@ -129,7 +128,7 @@ const Auction = () => {
           <label>Starting Amount</label>
         </div>
         
-        <button type="submit" className="btn">Submit</button>
+        <button type="submit" className="submit">Submit</button>
         
       </form>
       </div>

@@ -1,16 +1,17 @@
 // Navbar.js
 
-import React from 'react';
 import './Navbar.css';
 import { MdLogout } from "react-icons/md";
+
 
 const Navbar = () => {
   return (
     <nav>
       <ul>
-        <li className="active">
-          <button className="btn">Auctioneer</button>
-        </li>
+      <a href="/auction" class="no-underline">   <li className="active">
+         <button className="btn">Auctioneer</button>
+     
+        </li>  </a>
         <li className="active">
           <button className="btn">Bidder</button>
         </li>

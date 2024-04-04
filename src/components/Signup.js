@@ -10,7 +10,7 @@ class SignUpForm extends React.Component {
       <div className="container">
         <div className="login-box">
           <h2>SignUp</h2>
-          <form action="#">
+          <form action="#" className='form'>
           <div className="input-box">
               <input type="text" required />
               <label>First Name</label>

@@ -34,7 +34,7 @@ body {
     background: #2c4766;
     border-radius: 8px;
     transform-origin: 128px;
-    transform: scale(2.8) rotate(calc(var(--i) * (360deg / 50)));
+    transform: scale(2) rotate(calc(var(--i) * (360deg / 50)));
     animation: animateBlink 1s linear infinite;
     animation-delay: calc(var(--i) * (3s / 50));
 }

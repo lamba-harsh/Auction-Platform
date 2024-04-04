@@ -32,11 +32,16 @@ nav ul {
     /* Center the items horizontally */
     gap: 40px;
 }
-
+.no-underline {
+    text-decoration: none;
+  }
+  
 .btn {
     font-size: 1.2rem;
     padding: 1.5rem 3rem;
     margin: 20px;
+    position: relative;
+    left:50%;
     display: flex; /* Add display flex */
     justify-content: center; /* Center horizontally */
     align-items: center; 
@@ -62,12 +67,14 @@ nav ul {
     color: rgb(4, 4, 38);
 }
 .logout-btn {
+    position: relative;
+left: 360px;
     display: flex;
-    align-items: center;
+    align-items: right;
     
   }
   
   .logout-btn svg {
-    margin-right: 0.5rem;
+    margin-right: 0.1rem;
     font-size: 40px; /* Adjust the spacing between icon and text */
   }

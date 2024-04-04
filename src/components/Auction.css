@@ -19,6 +19,7 @@ body {
 
 .container {
     position: relative;
+    margin-top: 100px;
     width: 256px;
     height: 256px;
     display: flex;
@@ -125,7 +126,7 @@ h2 {
     text-decoration: underline;
 }
 
-.btn {
+.submit {
     margin: 20px auto 10px;
     /* Updated line */
     width: 100%;
