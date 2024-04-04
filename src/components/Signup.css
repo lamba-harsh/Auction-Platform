@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
 }
 
-.container {
+.container_signup {
     position: relative;
     width: 256px;
     height: 256px;
@@ -26,18 +26,6 @@ body {
     align-items: center;
 }
 
-.container span {
-    position: absolute;
-    left: 0;
-    width: 32px;
-    height: 5px;
-    background: #2c4766;
-    border-radius: 8px;
-    transform-origin: 128px;
-    transform: scale(2) rotate(calc(var(--i) * (360deg / 50)));
-    animation: animateBlink 1s linear infinite;
-    animation-delay: calc(var(--i) * (3s / 50));
-}
 
 @keyframes animateBlink {
     0% {
@@ -49,12 +37,26 @@ body {
     }
 }
 
-.login-box {
+.container_signup span {
     position: absolute;
-    width: 400px;
+    left: 0;
+    width: 32px;
+    height: 5px;
+    background: #2c4766;
+    border-radius: 8px;
+    transform-origin: 128px;
+    transform: scale(2.9) rotate(calc(var(--i) * (360deg / 50)));
+    animation: animateBlink 1s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
 }
 
-.login-box form {
+.logon-box {
+    position: absolute;
+    width: 400px;
+
+}
+
+.logon-box form {
     width: 100%;
     padding: 0 50px;
 }
@@ -123,7 +125,7 @@ h2 {
     text-decoration: underline;
 }
 
-.btn {
+.signup_btn {
     width: 100%;
     height: 45px;
     border-radius: 45px;

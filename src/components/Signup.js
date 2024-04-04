@@ -7,8 +7,8 @@ import './Signup.css';
 class SignUpForm extends React.Component {
   render() {
     return (
-      <div className="container">
-        <div className="login-box">
+      <div className="container_signup">
+        <div className="logon-box">
           <h2>SignUp</h2>
           <form action="#" className='form'>
           <div className="input-box">
@@ -32,16 +32,17 @@ class SignUpForm extends React.Component {
               <label>Confirm Password</label>
             </div>
          
-            <button type="submit" className="btn">SignUp</button>
+            <button type="submit" className="signup_btn">SignUp</button>
             <div className="signup-link">
               <a href="/signin">SignIn</a>
             </div>
           </form>
         </div>
-
+<div className='signup'>
         {Array.from({ length: 50 }).map((_, i) => (
           <span key={i} style={{ "--i": i }}></span>
         ))}
+        </div>
       </div>
     );
   }
