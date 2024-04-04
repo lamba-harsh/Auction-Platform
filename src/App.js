@@ -4,6 +4,7 @@ import Signup from './components/Signup'
 import Signin from './components/Signin'
 import Navbar from './components/Navbar'
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+import Auction from './components/Auction';
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={<Signup />} />
       <Route path="/signin" element={<Signin />} />
       <Route path="/home" element={<Navbar />} />
+      <Route path="/auction" element={<Auction />} />
       </Routes>
       </Router> 
 
