@@ -9,15 +9,15 @@ const Navbar = () => {
     <nav>
       <ul>
       <a href="/auction" class="no-underline">   <li className="active">
-         <button className="btn">Auctioneer</button>
+         <button className="btn_nav">Auctioneer</button>
      
         </li>  </a>
         <li className="active">
-          <button className="btn">Bidder</button>
+          <button className="btn_nav">Bidder</button>
         </li>
         <li className="logout-icon">
             <a href='/signin'>
-          <button className="btn logout-btn">
+          <button className="btn_nav logout-btn">
           <MdLogout />   
           </button>
           </a>

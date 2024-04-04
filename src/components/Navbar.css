@@ -5,7 +5,7 @@ body:before {
     position: absolute;
     inset: 40% -60% 0% -60;
     opacity: 0.3;
-    pointer-events: none;
+    
 }
 
 nav {
@@ -14,6 +14,7 @@ nav {
     top: 0;
     z-index: 1;
     width: 100%;
+
     /* Extend the navbar to cover the full width */
     background-color: rgb(14, 14, 26);
     /* Adjust this value to position the button vertically */
@@ -32,19 +33,22 @@ nav ul {
     /* Center the items horizontally */
     gap: 40px;
 }
+
 .no-underline {
     text-decoration: none;
-  }
-  
-.btn {
+}
+
+.btn_nav {
     font-size: 1.2rem;
     padding: 1.5rem 3rem;
     margin: 20px;
     position: relative;
-    left:50%;
-    display: flex; /* Add display flex */
-    justify-content: center; /* Center horizontally */
-    align-items: center; 
+    left: 50%;
+    display: flex;
+    /* Add display flex */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
     border: none;
     outline: none;
     border-radius: 0.4rem;
@@ -57,24 +61,26 @@ nav ul {
     box-shadow: 0px 0px 60px #1f4c65;
 }
 
-.btn:active {
+.btn_nav:active {
     transform: scale(0.92);
 }
 
-.btn:hover {
+.btn_nav:hover {
     background: rgb(2, 29, 78);
     background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
     color: rgb(4, 4, 38);
 }
+
 .logout-btn {
     position: relative;
-left: 360px;
+    left: 360px;
     display: flex;
     align-items: right;
-    
-  }
-  
-  .logout-btn svg {
+
+}
+
+.logout-btn svg {
     margin-right: 0.1rem;
-    font-size: 40px; /* Adjust the spacing between icon and text */
-  }
+    font-size: 40px;
+    /* Adjust the spacing between icon and text */
+}
