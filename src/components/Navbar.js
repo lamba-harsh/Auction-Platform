@@ -13,7 +13,7 @@ const Navbar = () => {
      
         </li>  </a>
         <li className="active">
-          <button className="btn_nav">Bidder</button>
+        <a href="/bidders" class="no-underline">  <button className="btn_nav">Bidder</button></a>
         </li>
         <li className="logout-icon">
             <a href='/signin'>

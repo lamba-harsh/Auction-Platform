@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 import Auction from './components/Auction';
 import Bidders from './components/Bidders';
+import Bidding from './components/Bidding';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/home" element={<Navbar />} />
       <Route path="/auction" element={[<Navbar />,<Auction />]} />
       <Route path="/bidders" element={[<Navbar />,<Bidders />]} />
+                                    
       </Routes>
       </Router> 
 

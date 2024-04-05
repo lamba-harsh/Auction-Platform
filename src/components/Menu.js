@@ -1,7 +1,10 @@
 import React from 'react'
 import './Bidder.css'
+import { useState } from 'react';
+import Bidding from './Bidding';
 
 const Menu = ({items}) => {
+    const [modalOpen, setModalOpen] = useState(false);
     return(
       <div className='section-center'>
           {items.map((menuItem)=>{
@@ -17,10 +20,14 @@ const Menu = ({items}) => {
                           <p className='item-text'>{desc}</p>
                           
                       </div>
-                      <button className='btn'>bid</button>
+                      <button className='btn' onClick={() => {
+          setModalOpen(true);
+        }}>bid</button>
+         
                   </article>
               )
           })}
+           {modalOpen && <Bidding setOpenModal={setModalOpen} />}
       </div>
     )
   };

@@ -3,6 +3,7 @@ import './Bidder.css'
 import Menu from './Menu';
 import { useState } from 'react'
 import items from './data';
+import {Outlet} from 'react-router-dom'
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))];
 const Bidders = () => {
@@ -15,6 +16,7 @@ return(
       <div className='underline'></div>
     </div>
     <Menu items={menuItems} />
+  
   </section>
 </main>
 )
