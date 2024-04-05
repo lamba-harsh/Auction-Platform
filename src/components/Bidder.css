@@ -56,7 +56,7 @@ Global Styles
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(--clr-primary-4);
+  background: #000;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -87,6 +87,7 @@ h3 {
 }
 h4 {
   font-size: 0.875rem;
+  color: #00fffc;
 }
 p {
   margin-bottom: 1.25rem;
@@ -104,6 +105,7 @@ p {
   }
   h4 {
     font-size: 1rem;
+    color: #00fffc;
   }
   body {
     font-size: 1rem;
@@ -146,7 +148,6 @@ Menu
 .underline {
   width: 5rem;
   height: 0.25rem;
-  background: var(--clr-gold);
   margin-left: auto;
   margin-right: auto;
 }
@@ -202,12 +203,12 @@ Menu
   margin-bottom: 0.5rem;
 }
 .price {
-  color: var(--clr-primary-1);
+  color: #00fffc;;
 }
 .item-text {
   margin-bottom: 0;
   padding-top: 1rem;
-  color: black;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {

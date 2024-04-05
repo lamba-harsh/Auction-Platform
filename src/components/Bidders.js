@@ -11,7 +11,7 @@ return(
   <main>
   <section className='menu section'>
     <div className='title'>
-      <h2>our menu</h2>
+      <h2>Current Bids</h2>
       <div className='underline'></div>
     </div>
     <Menu items={menuItems} />
