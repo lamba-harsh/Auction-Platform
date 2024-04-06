@@ -43,6 +43,9 @@ const NavHome = () => {
         <li>
           <a href="#comments" onClick={handleScroll} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-cyan md:p-0 md:dark:text-blue-500">Comments</a>
         </li>
+        <li>
+          <a href="#contactus" onClick={handleScroll} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-cyan md:p-0 md:dark:text-blue-500">Contact Us</a>
+        </li>
       </ul>
     </div>
   </div>

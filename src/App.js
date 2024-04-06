@@ -10,13 +10,14 @@ import Comment from './pages/Comment';
 import Home from './pages/Home';
 import NavHome from './pages/NavHome';
 import Points from './pages/Points';
+import Footer from './pages/Footer';
 
 function App() {
   return (
     <div className="App">
     <Router>
       <Routes>
-      <Route path="/" element={[<NavHome />, <Home />, <Points />, <Comment />]} />
+      <Route path="/" element={[<NavHome />, <Home />, <Points />, <Comment />, <Footer />]} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/signin" element={<Signin />} />
       <Route path="/home" element={<Navbar />} />
