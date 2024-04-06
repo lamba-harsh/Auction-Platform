@@ -62,27 +62,17 @@ const Auction = () => {
           <label>Description</label>
         </div>
         <div className="input-box">
-      <div className='date'>
-        <DatePicker
-        selected={selectedDate}
-        onChange={handleDateChange}
-        dateFormat="MM/dd/yyyy"
-        placeholderText=""
-        className="date-picker"
-      />
-      <label>Date</label>
-      </div>    
-            </div>
+          <input type="text" placeholder="." required  />
+          <label>Date</label>
+        </div>
             <div className="input-box">
-      <div className='date'>
-      <TimePicker
-          value={selectedTime}
-          onChange={time => setSelectedTime(time)}
-          className="time-picker"
-        />
-      <label>Time</label>
-      </div>    
-            </div>
+      <div className='Time'>
+      <div className="input-box">
+          <input type="text" required />
+          <label>End Time</label>
+        </div>
+        </div>
+        </div>
 
           
             <input

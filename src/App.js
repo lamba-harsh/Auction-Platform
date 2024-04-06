@@ -6,18 +6,23 @@ import Navbar from './components/Navbar'
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 import Auction from './components/Auction';
 import Bidders from './components/Bidders';
-import Bidding from './components/Bidding';
+import Comment from './pages/Comment';
+import Home from './pages/Home';
+import NavHome from './pages/NavHome';
+import Points from './pages/Points';
 
 function App() {
   return (
     <div className="App">
     <Router>
       <Routes>
-      <Route path="/" element={<Signup />} />
+      <Route path="/" element={[<NavHome />, <Home />, <Points />, <Comment />]} />
+      <Route path="/signup" element={<Signup />} />
       <Route path="/signin" element={<Signin />} />
       <Route path="/home" element={<Navbar />} />
       <Route path="/auction" element={[<Navbar />,<Auction />]} />
       <Route path="/bidders" element={[<Navbar />,<Bidders />]} />
+    
                                     
       </Routes>
       </Router> 

@@ -23,7 +23,7 @@ class LoginForm extends React.Component {
             </div>
             <button type="submit" className="login_btn ">Login</button>
             <div className="signup-link">
-              <a href="/">Signup</a>
+              <a href="/signup">Signup</a>
             </div>
           </form>
         </div>

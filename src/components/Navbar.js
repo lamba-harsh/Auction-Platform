@@ -8,10 +8,9 @@ const Navbar = () => {
   return (
     <nav>
       <ul>
-      <a href="/auction" class="no-underline">   <li className="active">
-         <button className="btn_nav">Auctioneer</button>
-     
-        </li>  </a>
+      <li className="active">
+        <a href="/auction" class="no-underline">  <button className="btn_nav">Auctioneer</button></a>
+        </li>
         <li className="active">
         <a href="/bidders" class="no-underline">  <button className="btn_nav">Bidder</button></a>
         </li>
