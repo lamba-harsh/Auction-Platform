@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import NavHome from './pages/NavHome';
 import Points from './pages/Points';
 import Footer from './pages/Footer';
+import BidData from './components/BidData';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/home" element={<Navbar />} />
       <Route path="/auction" element={[<Navbar />,<Auction />]} />
       <Route path="/bidders" element={[<Navbar />,<Bidders />]} />
+      <Route path="/bidderdata" element={<BidData />} />
     
                                     
       </Routes>

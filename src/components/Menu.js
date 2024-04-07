@@ -2,8 +2,9 @@ import React from 'react'
 import './Bidder.css'
 import { useState } from 'react';
 import Bidding from './Bidding';
-
+import {useNavigate} from 'react-router-dom'
 const Menu = ({items}) => {
+    const navigate = useNavigate()
     const [modalOpen, setModalOpen] = useState(false);
     return(
       <div className='section-center'>
@@ -20,9 +21,16 @@ const Menu = ({items}) => {
                           <p className='item-text'>{desc}</p>
                           
                       </div>
-                      <button className='btn' onClick={() => {
+                     <div className='flex gap-2'> <button className='btn' onClick={() => {
           setModalOpen(true);
-        }}>bid</button>
+         
+          
+        }}>Bid</button>
+        <button className='btn'  onClick={() => {
+          navigate('/bidderdata',{state:{description:desc,image:img,title:title,bid:bid}})
+          
+        }}>Details</button>
+        </div>
          
                   </article>
               )

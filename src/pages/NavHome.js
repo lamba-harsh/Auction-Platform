@@ -14,7 +14,7 @@ const NavHome = () => {
         }
       };
   return (
-<nav class="bg-black dark:bg-gray-900 fixed w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600">
+<nav class="bg-purple dark:bg-gray-900 fixed w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600">
   <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
     <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
       <img src={logo} class="h-14 w-14" alt="Logo" />
@@ -30,7 +30,7 @@ const NavHome = () => {
       </button>
     </div>
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 " id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-black dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-purple md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
         <li>
           <a href="#home" onClick={handleScroll} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-cyan md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
         </li>
